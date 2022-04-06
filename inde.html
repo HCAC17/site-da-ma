@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="div-button">
+    <button class='butao' id="botao-inicio" onclick="mudarScroll()">CLICA</button>
+    <button class='butao' id="botao-meio" onclick='mudarScroll1()'>CLICA</button>
+    <button class='butao' id="botao-fim" onclick="mudarScroll2()">CLICA</button>
+  </div>
+
+  <div id="div-inicio"></div>
+  <div id="div-meio"></div>
+  <div id="div-fim"></div>
+  <script>
+    var num = 20;
+    var obj = document.getElementById('html')
+
+    function mudarScroll(){
+      var botaoInicio = setInterval(function(){
+        
+        if(obj.scrollTop <= 0){
+          clearInterval(botaoInicio);
+        }
+        obj.scrollTop -= num;
+      },1);
+    }
+    function mudarScroll1(){
+      var botaoMeio = setInterval(function(){
+        if(obj.scrollTop <= 721){
+          obj.scrollTop += num;
+        }else if(obj.scrollTop >= 741){
+          obj.scrollTop -= num;
+        }else{
+          clearInterval(botaoMeio);
+        }
+        
+      },1);
+      
+    }
+    
+    function mudarScroll2(){
+      var botaoFim = setInterval(function(){
+        if(obj.scrollTop >= 1462){
+         clearInterval(botaoFim);
+        }
+        obj.scrollTop += num;
+      },1);
+    }
+    
+
+  </script>
+
+</body>
+</html>

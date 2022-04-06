@@ -1,0 +1,57 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#div-button {
+  right: 0px;
+  flex-direction: column;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  border: 2px fuchsia solid;
+  width: 10vh;
+  height: 100vh;
+}
+
+.butao {
+  margin: 10px 0px 10px 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+#botao-inicio{
+  background-color: red;
+}
+#botao-meio{
+  background-color: rgb(17, 0, 255);
+}
+#botao-fim{
+  background-color:  rgb(51, 255, 0);
+}
+
+#div-inicio{
+  background-color: red;
+  height: 100vh;
+  width: 100vw;
+}
+#div-meio{
+  background-color: rgb(17, 0, 255);
+  height: 100vh;
+  width: 100vw;
+}
+#div-fim{
+  background-color: rgb(51, 255, 0);
+  height: 100vh;
+  width: 100vw;
+}
+
