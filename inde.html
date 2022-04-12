@@ -103,6 +103,10 @@
       var xButton = [];
       var xProgres = animationProgresBar.getBoundingClientRect().x;
       var flag = true;
+      var p = document.querySelector('html').scrollHeight;
+      var scrollPage = p / 3;
+      //console.log(p);
+      
 
       for (var i = 0; i < objButton.length; i++) {
         xButton[i] = objButton[i].getBoundingClientRect().x;
@@ -118,9 +122,9 @@
       }
       function mudarScroll1() {
         var botaoMeio = setInterval(function () {
-          if (obj.scrollTop <= 721) {
+          if (obj.scrollTop <= scrollPage - 10) {
             obj.scrollTop += veloRowll;
-          } else if (obj.scrollTop >= 741) {
+          } else if (obj.scrollTop >= scrollPage + 10) {
             obj.scrollTop -= veloRowll;
           } else {
             clearInterval(botaoMeio);
@@ -129,7 +133,7 @@
       }
       function mudarScroll2() {
         var botaoFim = setInterval(function () {
-          if (obj.scrollTop >= 1462) {
+          if (obj.scrollTop >= scrollPage*2) {
             clearInterval(botaoFim);
           }
           obj.scrollTop += veloRowll;
