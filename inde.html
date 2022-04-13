@@ -25,42 +25,34 @@
     <div id="div-fim">
       <div class="div-conteudo-time-line">
         <div class="conteudo" id="d1">
-          1
           <div class="div-foto"></div>
           <div class="div-texto"></div>
         </div>
         <div class="conteudo" id="d2">
-          2
           <div class="div-foto"></div>
           <div class="div-texto"></div>
         </div>
         <div class="conteudo" id="d3">
-          3
           <div class="div-foto"></div>
           <div class="div-texto"></div>
         </div>
         <div class="conteudo" id="d4">
-          4
           <div class="div-foto"></div>
           <div class="div-texto"></div>
         </div>
         <div class="conteudo" id="d5">
-          5
           <div class="div-foto"></div>
           <div class="div-texto"></div>
         </div>
         <div class="conteudo" id="d6">
-          6
           <div class="div-foto"></div>
           <div class="div-texto"></div>
         </div>
         <div class="conteudo" id="d7">
-          7
           <div class="div-foto"></div>
           <div class="div-texto"></div>
         </div>
         <div class="conteudo" id="d8">
-          8
           <div class="div-foto"></div>
           <div class="div-texto"></div>
         </div>
@@ -103,10 +95,9 @@
       var xButton = [];
       var xProgres = animationProgresBar.getBoundingClientRect().x;
       var flag = true;
-      var p = document.querySelector('html').scrollHeight;
+      var p = document.querySelector("html").scrollHeight;
       var scrollPage = p / 3;
       //console.log(p);
-      
 
       for (var i = 0; i < objButton.length; i++) {
         xButton[i] = objButton[i].getBoundingClientRect().x;
@@ -133,13 +124,13 @@
       }
       function mudarScroll2() {
         var botaoFim = setInterval(function () {
-          if (obj.scrollTop >= scrollPage*2) {
+          if (obj.scrollTop >= scrollPage * 2) {
             clearInterval(botaoFim);
           }
           obj.scrollTop += veloRowll;
         }, 1);
       }
-
+    
       function mostrar(x) {
         xProgres = Math.floor(xProgres);
         x = Math.floor(x);
@@ -162,27 +153,34 @@
       }
 
       function esconder(id) {
-        var arrey = [
-          "d1",
-          "d2",
-          "d3",
-          "d4",
-          "d4",
-          "d5",
-          "d5",
-          "d6",
-          "d7",
-          "d8",
-        ];
+        var arrey = ["d1", "d2", "d3", "d4", "d5", "d6", "d7", "d8"];
 
         if (document.getElementById(id).style.display !== "block") {
           for (let i = 0; i < arrey.length; i++) {
             if (arrey[i] !== id) {
               document.getElementById(arrey[i]).style.display = "none";
+              document.getElementById(id).style.opacity = 0
             }
           }
           document.getElementById(id).style.display = "block";
-        } else document.getElementById(id).style.display = "none";
+        } else {
+          document.getElementById(id).style.display = "none";
+          document.getElementById(id).style.opacity = 0
+        }
+''
+          var opa = 0.1;
+          var mudarOpacidade = 0;
+          var animacaoAparecer = setInterval(() => {
+            //console.log(mudarOpacidade);
+            document.getElementById(id).style.opacity = mudarOpacidade;
+            mudarOpacidade += opa;
+            if(mudarOpacidade > 1){
+              clearInterval(animacaoAparecer);
+            }
+          },50);     
+
+          var algo = document.getElementById(id).getElementsByClassName('div-foto');
+          console.log('a', algo);
       }
     </script>
   </body>
