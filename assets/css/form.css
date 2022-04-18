@@ -37,23 +37,12 @@ input[type=text]:focus {
 }
 
 
-
-
-
-
-
 form{
     background-color: rgb(252,251,199);
     width: 100vw;
     height: 100vh;
     box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.20);
 }
-
-  
-
-
-
-
 
 
 .caixinha {
