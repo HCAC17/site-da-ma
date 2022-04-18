@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+html body #pag1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding: 0;
+    margin: 0;
+    color: black;
+    flex-direction: row;
+    align-items: stretch;  
+}
+::-webkit-scrollbar {
+    display:none;
+}
+html body #pag1 #div1 {
+    background-color: rgb(136,173,180);
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+#fotoPerfil {
+    background-image: url(./thumbnail_72255050_2855379907909870_5076422361985581056_n.jpg);
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    border-radius:250px;
+    margin-top: -340px;  
+    margin-left: -50px;
+}
+#descricao #frase {
+    margin-left: 20%;
+    font-size: 30px;
+    text-align: center;
+    
+}
+#post{
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    border: 5px solid transparent;
+}
+.descricao {
+
+    background-color: rgb(77,125,146);
+    width: 60%;
+    height: 60%;
+    border-radius: 15px;
+    margin-top: 200px;
+    /*background: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);*/
+}
+#frase {
+    font-size: 65px;
+    margin-left: 100px;
+    margin-top: -35px;
+    color: white;
+}
+#logo {
+    background-image: url(./logo.ma2.png);
+    width: 600px;
+    height:300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -85px;
+    margin-left: 600px;
+   
+}
+#ifreme {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    background-color: rgb(218,174,207);
+}
+#int {
+    flex-direction: column;
+
+    height: 100%;
+    width: 50%;
+    
+}
+#perguntas {
+    width: 80%;
+    height:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    
+}
+#respostas{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    
+}
+
+#interacao {
+    height: 100%;
+    width: 50%;
+}
+.interacao{
+    height: 50%;
+}
