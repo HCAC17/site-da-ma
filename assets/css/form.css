@@ -44,10 +44,8 @@ input[type=text]:focus {
 
 form{
     background-color: rgb(252,251,199);
-    width: 160vh;
-    height: 80vh;
-    position: relative;
-    left: 200px;
+    width: 100vw;
+    height: 100vh;
     box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.20);
 }
 
@@ -84,7 +82,7 @@ form{
 
 
 
- #nome {
+#nome {
      height: 6vh;
      margin-top: 50px;
  }
@@ -101,7 +99,7 @@ form{
 }
 
 
-.button {
+form .caixinha2 .actions .button {
     border-radius: 4px;
     background-color: rgb(113,213,136);
     border: none;
