@@ -1,5 +1,4 @@
 
-
 input[type=text] {
     border-radius: 5px;
     cursor: pointer;
@@ -8,6 +7,8 @@ input[type=text] {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
+    margin-top: -10px;
+    margin-right: -40px;
     
     
 }
@@ -21,6 +22,8 @@ input[type=text]:focus {
 
 
 #mensagem {
+    width: 122vh;
+    height: 15vw;
     border-radius: 5px;
     box-sizing: border-box;
     border: 3px solid #ccc;
@@ -28,6 +31,7 @@ input[type=text]:focus {
     transition: 0.5s;
     outline: none;
     cursor: pointer;
+
 }
 
 #mensagem:focus {
@@ -41,7 +45,8 @@ form{
     background-color: rgb(252,251,199);
     width: 100vw;
     height: 100vh;
-    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.20);
+    
+    
 }
 
 
@@ -50,7 +55,7 @@ form{
     position: relative;
     display: inline-block;
     margin: 24px;
-    left: 7%;
+    
 }
 
 
@@ -58,7 +63,7 @@ form{
     
     position: relative;
     margin: 25px;
-    left: 7%;
+    left: 50vh;
     border-radius: 5px;
 }
 
@@ -72,18 +77,22 @@ form{
 
 
 #nome {
-     height: 6vh;
-     margin-top: 50px;
+    width: 60vh;
+     height: 8vh;
+     margin-left: 50vh;
+     
  }
 #email{
-    height: 6vh;
-    margin-top: 50px;
+    width: 60vh;
+    height: 8vh;
+    
 }
 
 #assunto {
-    
-    height: 6vh;
-    width: 67vh;
+       
+    height: 8vh;
+    width: 122vh;
+    margin-bottom: 5px;
     
 }
 
@@ -128,6 +137,46 @@ form .caixinha2 .actions .button {
   }
 
 
-  form {
-      top: 10%;
+  #formtitulo {
+      left: 5px;
+      text-align: center;
+      padding: 20px;
   }
+
+
+  .fa {
+    padding: 10px;
+    font-size: 60px;
+    width: 6vh;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    position: relative;
+     float: right;
+     top: 83vh;
+      right: 76vh;
+    
+
+  }
+
+   .fa-linkedin {
+     background: #007bb5;
+     color: white;
+     position: relative;
+     float: right;
+     top: 83vh;
+      right: 70vh;
+     
+     
+    }
